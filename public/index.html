@@ -39,351 +39,60 @@
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,700" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128653693-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128653693-2"></script>
   <script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-128653693-1');
+		gtag('config', 'UA-128653693-2');
   </script>
 
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+
   <style type="text/css">
-    body {
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      /*background-color: rgba(0,0,0,0.01);*/
-      /*background-color: #5558FF;*/
-
+    html{
       box-sizing: border-box;
+    }
+    #body {
       margin: 0px;
-      background-color: #fcfcfc;
+      background-color: #f0f2f5;
     }
-
-    main {
+    #div {
+      height: 100vh;
       width: 100%;
-      background:rgba(85,88,255,1);
-      color: rgba(255, 255, 255, 0.8)
-    }
-
-    .main {
-      width: 100%;
-      min-height: calc(100vh - 60px);
-      padding: 30px 0px;
-      display:flex;
-      flex-direction: column;
+      background-color: #f0f2f5;
+      display: flex;
+      align-items: center;
       justify-content: center;
-      align-items:center;
-
-    }
-
-    h1, h3, h5 {
-      margin: 0px;
-    }
-    h1 {
-      font-weight: 700;
-      line-height: 1.2;
-      /*font-size: 40px;*/
-      font-size: 36px;
-      color: #fff;
-    }
-
-    h2 {
-      margin-bottom: 0px;
-      font-size: 20px;
-      color: #fff;
-    }
-    h3{
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.8);
-      margin-bottom: -5px;
-    }
-
-    ul{
-      padding: 0px 0px 0px 0px;
-      margin-bottom: 20px;
-    }
-    li {
-      margin: 6px 0px;
-      display:flex;
-      align-items:center;
-      font-weight: bold;
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.8);
-      line-height: 1.2;
-    }
-
-    .icon {
-      margin-right: 10px;
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.8);
-      /*display: none;*/
-    }
-
-    .sensor {
-      display:none;
-    }
-    .email {
-      outline: none;
-      padding: 5px 12px;
-      font-size: 16px;
-      border-radius: 3px;
-      font-weight: 400;
-      height: 34px;
-      width: 200px;
-      background-color: rgba(255, 255, 255, 0.95);
-      border: 1px solid rgba(0, 0, 0, 0);
-      color: rgba(0,0,0,0.9);
-      letter-spacing: 0.03em;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.03), 0 3px 6px rgba(0,0,0,0.07);
-    }
-    .email::placeholder {
-      color: rgba(0, 0, 0, 0.4);
-      letter-spacing: 0.03em;
-    }
-
-
-    #mc_embed_signup input.mce_inline_error {
-      border-color: #fff !important;
-    }
-
-    #mce-error-response a {
-      color: #fff;
-    }
-
-    #mc_embed_signup div.mce_inline_error {
-      background-color: transparent !important;
-      font-size: 14px !important;
-      color: rgba(255, 255, 255, 0.7);
-      font-style: italic;
-    }
-
-    .imageContainer {
-      max-width: 320px;
-      width: 100%
-    }
-
-    #left {
-      padding: 30px;
-      max-width: 500px;
-    }
-    #right {
-      width: 100%;
-      display:flex;
       flex-direction: column;
-      justify-content:center;
-      align-items: center;
+      font-family:sans-serif;
+      text-align:center;
     }
-    #emailSignup {
-      display:flex;
-      margin-top: 20px;
-      margin-bottom:20px;
+    #text {
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 30px;
     }
-
-    #mc_embed_signup {
-      padding: 10px 0px 20px 0px;
-    }
-
-    #mc-embedded-subscribe {
-      height: 46px;
-      display:flex;
-      align-items: center;
-      /*width: 46px;*/
-      margin-left: 10px;
-      border-radius: 3px;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 1;
-      transition: all 0.2s ease;
-      color: #fff;
-      background-color: rgba(255,99,99,1);
-      padding: 0px 15px;
-      border: 0px solid transparent;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.03), 0 3px 6px rgba(0,0,0,0.07);
-    }
-
-    #mc-embedded-subscribe:hover {
-      /*background-color: rgba(255, 255, 255, 1);*/
-      box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.12);
-      cursor: pointer;
-    }
-    #benefits {}
-
-    #phone {
-      position:relative;
-    }
-
-    .marvel-device.iphone8 {
-      width: calc(100vw - 80px);
-      max-width:375px;
-      height: calc((100vw - 80px) * (667/375) - 2px);
-      max-height: calc(667/375 * 375px);
-    }
-
-    #scrollToLearnMore {
-      width: 100%;
-      text-align: center;
-    }
-
-    #phoneTop{
-
-    }
-    #phoneBottom{
-
-    }
-
-    #btnTextSpan {
-      display:none;
-    }
-
-    #btnArrowSpan {
-      display:block;
-      font-size: 11px;
-    }
-
-    @media(min-width: 1000px){
-      .main {
-        display:flex;
-        flex-direction: row;
-        max-width: 1200px;
-        width: 100%;
-        padding: 30px 0px;
-        align-items: flex-start;
-      }
-      #left {
-        width: 50%;
-        padding: 30px 60px;
-        display:flex;
-        flex-direction: column;
-        padding-top: 20vh;
-        /*justify-content:center;*/
-      }
-      #right {
-        width: 50%;
-      }
-
-      h1 {
-        font-weight: 700;
-        line-height: 1.2;
-        font-size: 40px;
-        color: #fff;
-      }
-      ul{
-        padding: 0px 0px 0px 20px;
-        margin-bottom: 20px;
-      }
-      li {
-        margin: 10px 0px;
-        display:flex;
-        align-items:center;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 18px;
-      }
-
-      #mc_embed_signup {
-        padding: 10px 0px;
-      }
-
-      .email {
-        width: 250px;
-        height: 34px;
-      }
-
-      #btnTextSpan {
-        display: block;
-      }
-
-      #btnArrowSpan {
-        display:none;
-      }
-    }
-
   </style>
 </head>
-<body>
-<main>
-  <div class="main">
-  <div id="left">
-    <h3>
-      Ashby is your
-    </h3>
-    <h1>automated personal adulting assistant</h1>
-
-    <h3 style="margin: 40px 0px 0px 0px; color: rgba(255, 255, 255, 0.95)">Ashby makes it easy for you to manage
-      mundane
-      responsibilities and navigate adulthood
-      through
-      autogenerated reminders, guidance, and more. You'll save time, save
-    money and stress less.</h3>
-    <div id="mc_embed_signup">
-      <!--<h2>Coming soon</h2>-->
-      <!--<h5>Sign up to be the first to get Ashby when it's ready.</h5>-->
-      <form
-        action="https://newsbie.us18.list-manage.com/subscribe/post?u=bbab41b4faa898c5bb1f4c2e1&amp;id=6d37986a72"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate>
-        <div id="mc_embed_signup_scroll">
-          <div id="emailSignup">
-            <div class="mc-field-group">
-              <input placeholder="Your email address" type="email" value="" name="EMAIL"
-                     class="required email"
-                     id="mce-EMAIL">
-            </div>
-            <div class="clear">
-              <button
-                type="submit"
-                value="Keep Me Posted"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                class="button">	<span id="btnTextSpan">Sign Up</span>
-                <span id="btnArrowSpan">Sign Up</span></button>
-            </div>
-          </div>
-
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_bbab41b4faa898c5bb1f4c2e1_6d37986a72" tabindex="-1" value="">
-          </div>
-        </div>
-      </form>
-    </div>
-
+<body id="body">
+<div id="root">
+  <div id="div" style="height: 100vh; width: 100%; background-color: rgba(85,88,255,1);">
+    <!--<h4 id="text">Loading the news...</h4>-->
+    <img
+      src="images/android-chrome-512x512.png"
+      height="200"
+      width="200"
+    />
   </div>
-  <div id="right">
-    <div id="phone">
-      <div class="marvel-device iphone8 silver">
-        <div class="top-bar"></div>
-        <div class="sleep"></div>
-        <div class="volume"></div>
-        <div class="camera"></div>
-        <div class="sensor"></div>
-        <div class="speaker"></div>
-        <div class="screen">
-          <!--<div class="imageContainer">-->
-          <img src="https://d1dzf0mjm4jp11.cloudfront.net/ashby-convo-example.jpg" width="100%"/>
-          <!--</div>-->
-        </div>
-        <div class="home"></div>
-        <div class="bottom-bar"></div>
-      </div>
-    </div>
-  </div>
-  </div>
+</div>
 
-</main>
-
-<div id="root"></div>
-
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script src="bundle.js"></script>
 </body>
 </html>
 
