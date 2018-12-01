@@ -237,7 +237,7 @@ class Landing extends Component {
                   <div className="speaker" />
                   <div className="screen">
                     <img
-                      src="https://s3.amazonaws.com/ashby.app/images/convo-6.jpg"
+                      src="https://s3.amazonaws.com/ashby.app/images/convo-12.jpg"
                       width="100%"
                     />
                   </div>
